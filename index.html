@@ -6,27 +6,83 @@
     <meta name="keywords" content="cv, curriculum vitae, desarrollo web">
     <meta name="author" content="Alumno">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Html y css</title>
     <!-- Enlazamos nuestro favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <h1>Mi primera pagina web</h1>
-    <hr>
-    <p>Esta es nuestra primera pagina web, es un ensayo</p>
-    <br>
-    <div>
-        <h3>Mi primer container div</h3>
-        <p>Este texto está dentro de mi primer container <strong>div</strong> :)</p>
-    </div>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
 
-    <div style="text-align: center; border: 2px solid blue;">
-        <br>
-        <button style="width: 80%;">Registrate</button>
+    <main>
+        <h1>Mi primera pagina web</h1>
         <hr>
-        <img style="width: 80%;" src="https://picsum.photos/id/684/600/400" alt="imagen 1">
-    </div>
+        <p>Esta es nuestra primera pagina web, es un ensayo</p>
+        <br>
+        <div>
+            <h3>Mi primer container div</h3>
+            <p>Este texto está dentro de mi primer container <strong>div</strong> :)</p>
+            <p>Probando links <a href="https://www.google.com/" target="_blank">ir a google</a></p>
+        </div>
+
+        <div style="text-align: center; border: 2px solid blue;">
+            <br>
+            <button style="width: 80%;">Registrate</button>
+            <hr>
+            <img style="width: 80%;" src="https://picsum.photos/id/684/600/400" alt="imagen 1">
+        </div>
+
+        <!-- Orden de estructura -->
+        <section style="text-align: center;">
+            <div>
+                <h2>Seccion 1</h2>
+                <p>Texto en seccion 1.</p>
+            </div>
+            <div>
+                <h2>Seccion 2</h2>
+                <p>Texto en seccion 2.</p>
+            </div>
+        </section>
+
+        <!-- Cargando imagenes local y externa, aplicando alineamiento -->
+        <section>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="https://favicon.io/assets/static/index-generate-from-image.2f2d982.64f9de6cc7d27508623dc457c89a3e34.png"
+                    alt="logo" style="padding-right: 10px; width: 40%; height: 200px;">
+                <img src="./assets/img/montaña.jpg" alt="montaña"
+                    style="padding-left: 10px; width: 40%; height: 200px;">
+            </div>
+        </section>
+
+        <!-- Usando listas -->
+        <section style="display: flex; flex-wrap: wrap;  justify-content: space-around;">
+            <div style="width: 40%;">
+                <h3>Usando listas ordenadas</h3>
+                <ol>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                    <li>Elemento 4</li>
+                </ol>
+            </div>
+            <div style="width: 40%;">
+                <h3>Usando listas sin orden</h3>
+                <ul>
+                    <li>Elemento A</li>
+                    <li>Elemento B</li>
+                    <li>Elemento C</li>
+                    <li>Elemento D</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
